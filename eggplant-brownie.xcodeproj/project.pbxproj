@@ -13,6 +13,8 @@
 		DA173B7727AB6BA9008BD5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA173B7527AB6BA9008BD5FE /* Main.storyboard */; };
 		DA173B7927AB6BAB008BD5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA173B7827AB6BAB008BD5FE /* Assets.xcassets */; };
 		DA173B7C27AB6BAB008BD5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA173B7A27AB6BAB008BD5FE /* LaunchScreen.storyboard */; };
+		DABB285427AF5C790059B0DB /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB285327AF5C790059B0DB /* Meal.swift */; };
+		DABB285627AF5E190059B0DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB285527AF5E180059B0DB /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		DA173B7827AB6BAB008BD5FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA173B7B27AB6BAB008BD5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA173B7D27AB6BAB008BD5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4ED4BC27AE23BF00293264 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DABB285327AF5C790059B0DB /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		DABB285527AF5E180059B0DB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +61,42 @@
 		DA173B6E27AB6BA9008BD5FE /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				DABB285727AF5FBE0059B0DB /* Models */,
+				DABB285927AF600C0059B0DB /* Views */,
+				DABB285827AF5FEF0059B0DB /* Controllers */,
+				DA4ED4BC27AE23BF00293264 /* MyPlayground.playground */,
 				DA173B6F27AB6BA9008BD5FE /* AppDelegate.swift */,
 				DA173B7127AB6BA9008BD5FE /* SceneDelegate.swift */,
-				DA173B7327AB6BA9008BD5FE /* ViewController.swift */,
-				DA173B7527AB6BA9008BD5FE /* Main.storyboard */,
 				DA173B7827AB6BAB008BD5FE /* Assets.xcassets */,
 				DA173B7A27AB6BAB008BD5FE /* LaunchScreen.storyboard */,
 				DA173B7D27AB6BAB008BD5FE /* Info.plist */,
 			);
 			path = "eggplant-brownie";
+			sourceTree = "<group>";
+		};
+		DABB285727AF5FBE0059B0DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DABB285327AF5C790059B0DB /* Meal.swift */,
+				DABB285527AF5E180059B0DB /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DABB285827AF5FEF0059B0DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA173B7327AB6BA9008BD5FE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DABB285927AF600C0059B0DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA173B7527AB6BA9008BD5FE /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABB285627AF5E190059B0DB /* Item.swift in Sources */,
+				DABB285427AF5C790059B0DB /* Meal.swift in Sources */,
 				DA173B7427AB6BA9008BD5FE /* ViewController.swift in Sources */,
 				DA173B7027AB6BA9008BD5FE /* AppDelegate.swift in Sources */,
 				DA173B7227AB6BA9008BD5FE /* SceneDelegate.swift in Sources */,
